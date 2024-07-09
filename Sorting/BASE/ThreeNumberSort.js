@@ -12,14 +12,13 @@ function threeNumberSort(arr, order) {
       ;[arr[firstIdx], arr[secondIdx]] = [arr[secondIdx], arr[firstIdx]]
       firstIdx++
       secondIdx++
-    } else if (arr[secondIdx] === secondIdx) {
+    } else if (arr[secondIdx] === secondValue) {
       secondIdx++
     } else {
       ;[arr[secondIdx], arr[thirdIdx]] = [arr[thirdIdx], arr[secondIdx]]
       thirdIdx--
     }
   }
-
   return arr
 }
 
@@ -27,4 +26,4 @@ const arr = [5, 3, 5, 4, 3, 3, 4, 4, 5]
 const order = [3, 4, 5]
 console.log('Unsorted array:', arr)
 const sortedArr = threeNumberSort(arr, order)
-console.log('sorted array', sortedArr)
+console.log('Sorted array:', sortedArr)
