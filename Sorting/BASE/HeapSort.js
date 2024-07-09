@@ -1,44 +1,44 @@
 // O(n log(n))
 
-function heapify(arr, n, i) {
-  let largest = i // Initialize largest as root
-  const left = 2 * i + 1 // Left child index
-  const right = 2 * i + 2 // Right child index
+function swap(arr, idx1, idx2) {
+  ;[arr[idx1], arr[idx2]] = [arr[idx2], arr[idx1]]
+}
 
-  if (left < n && arr[left] > arr[largest]) {
-    // Corrected condition
+function heapify(arr, length, i) {
+  let largest = i
+  let left = 2 * i + 1
+  let right = 2 * i + 2
+
+  if (left < length && arr[left] > arr[largest]) {
     largest = left
   }
 
-  // Check if right child is larger than largest
-  if (right < n && arr[right] > arr[largest]) {
-    // Corrected condition
+  if (right < length && arr[right] > arr[largest]) {
     largest = right
   }
 
   if (largest !== i) {
-    ;[arr[i], arr[largest]] = [arr[largest], arr[i]]
-    heapify(arr, n, largest)
+    swap(arr, i, largest)
+    heapify(arr, length, largest)
   }
 }
 
 function heapSort(arr) {
-  const n = arr.length
+  let length = arr.length
 
-  for (let i = Math.floor((n - 1) / 2); i >= 0; i--) {
-    heapify(arr, n, i)
+  for (let i = Math.floor(length / 2) - 1; i >= 0; i--) {
+    heapify(arr, length, i)
   }
 
-  console.log('mid: ', arr)
-
-  for (let i = n - 1; i > 0; i--) {
-    ;[arr[0], arr[i]] = [arr[i], arr[0]]
-
+  for (let i = length - 1; i >= 0; i--) {
+    swap(arr, 0, i)
     heapify(arr, i, 0)
   }
 
   return arr
 }
 
-const arr = [12, 11, 13, 5, 6, 7]
-console.log('Sorted array:', heapSort(arr)) // Output: [5, 6, 7, 11, 12, 13]
+const arr = [4, 2, 7, 1, 3, 5, 6]
+console.log('Original array:', arr)
+const sortedArr = heapSort(arr.slice()) //to avoid mutation of the original array
+console.log('Sorted array:', sortedArr)

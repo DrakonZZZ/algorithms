@@ -1,4 +1,4 @@
-//  Time Complexity: O(n + k)
+// Time Complexity: O(n + k)
 
 function insertionSort(arr) {
   for (let i = 1; i < arr.length; i++) {
@@ -8,10 +8,8 @@ function insertionSort(arr) {
       arr[j + 1] = arr[j]
       j = j - 1
     }
-
     arr[j + 1] = current
   }
-
   return arr
 }
 
@@ -23,7 +21,7 @@ function bucketSort(arr, bucketSize = 5) {
   let minValue = Math.min(...arr)
   let maxValue = Math.max(...arr)
 
-  let bucketCount = Math.floor((maxValue - maxValue) / bucketSize) + 1
+  let bucketCount = Math.floor((maxValue - minValue) / bucketSize) + 1
   let buckets = new Array(bucketCount).fill(null).map(() => [])
 
   for (let i = 0; i < arr.length; i++) {

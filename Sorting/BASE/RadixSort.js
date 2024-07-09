@@ -14,7 +14,7 @@ function countingSort(arr, exp) {
 
   for (let i = n - 1; i >= 0; i--) {
     const index = Math.floor(arr[i] / exp) % 10
-    output[count[index - 1]] = arr[i]
+    output[count[index] - 1] = arr[i]
     count[index]--
   }
 
@@ -24,10 +24,8 @@ function countingSort(arr, exp) {
 }
 
 function radixSort(arr) {
-  // Find the maximum number to know the number of digits
   const max = Math.max(...arr)
 
-  // Do counting sort for every digit. The exp is 10^i where i is the current digit number
   for (let exp = 1; Math.floor(max / exp) > 0; exp *= 10) {
     countingSort(arr, exp)
   }
