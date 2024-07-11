@@ -23,12 +23,14 @@ This repository is a comprehensive collection of algorithms implemented in JavaS
 ## Algorithms
 
 ### Linked List
+
 - Singly Linked List
 - Doubly Linked List
 - Circular Linked List
 - Improvements and optimizations
 
 ### Sorting Algorithms
+
 - Bubble Sort
 - Selection Sort
 - Insertion Sort
@@ -38,13 +40,17 @@ This repository is a comprehensive collection of algorithms implemented in JavaS
 - Optimizations and enhancements
 
 ### Search Algorithms
+
 - Linear Search
 - Binary Search
+- Jump Search
+- Exponential Search
 - Depth-First Search (DFS)
 - Breadth-First Search (BFS)
 - Optimized search techniques
 
 ### Graph Algorithms
+
 - Dijkstra's Algorithm
 - Bellman-Ford Algorithm
 - Floyd-Warshall Algorithm
@@ -52,22 +58,23 @@ This repository is a comprehensive collection of algorithms implemented in JavaS
 - Enhancements and optimizations
 
 ### Dynamic Programming
+
 - Fibonacci Sequence
 - Knapsack Problem
 - Longest Common Subsequence
 
-
 ### Huffman Algorithm
+
 - Huffman Coding
 - Huffman Decoding
 - Compression and decompression methods
 
-
- and much more
-
+and much more
 
 ### Contributing
+
 Contributions are welcome! If you have an algorithm you'd like to add or an improvement to an existing one, feel free to open a pull request. Please ensure your code follows the style and guidelines of this repository.
 
 ### License
+
 This repository is licensed under the MIT License.
