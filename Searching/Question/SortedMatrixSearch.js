@@ -3,12 +3,12 @@ function searchMatrix(matrix, target) {
     return [-1, -1]
   }
 
-  let matrix = matrix.length
+  let numRows = matrix.length
   let numCols = matrix[0].length
-  let numRow = matrix.length
   let i = 0
   let j = numCols - 1
-  while (i < numRow && j >= 0) {
+
+  while (i < numRows && j >= 0) {
     if (matrix[i][j] === target) {
       return [i, j]
     } else if (matrix[i][j] > target) {

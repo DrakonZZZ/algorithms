@@ -1,22 +1,31 @@
-function findThreeLargestNumbers(arr) {
-  let first = -Infinity
-  let second = -Infinity
-  let third = -Infinity
+function searchMatrix(matrix, target){
+  if(matrix.length === 0 || matrix[0].length === 0){
+    return [-1, -1];
+  }
 
-  for (const num of arr) {
-    if (num > first) {
-      third = second
-      second = first
-      first = num
-    } else if (num > second) {
-      third = second
-      second = num
+  let numCols = martix[0].length;
+  let numRow = martix.length;
+  let i = 0
+  let j = numCols - 1
+  while (i < numRow && j >= 0) {
+    if (matrix[i][j] === target) {
+      return [i, j]
+    } else if (matrix[i][j] > target) {
+      j--
     } else {
-      third = num
+      i++
     }
   }
-  return [first, second, third]
+  return [-1, -1]
 }
 
-const arr = [10, 5, 9, 10, 12, 1, 20]
-console.log(findThreeLargestNumbers(arr))
+const matrix = [
+  [10, 20, 30, 40],
+  [15, 25, 35, 45],
+  [27, 29, 37, 48],
+  [32, 33, 39, 50],
+]
+
+const target = 29
+const result = searchMatrix(matrix, target);
+console.log(result);
