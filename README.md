@@ -45,9 +45,12 @@ This repository is a comprehensive collection of algorithms implemented in JavaS
 - Binary Search
 - Jump Search
 - Exponential Search
+- Interpolation Search
+
+  Tree Search Algorithms
+
 - Depth-First Search (DFS)
 - Breadth-First Search (BFS)
-- Optimized search techniques
 
 ### Graph Algorithms
 
