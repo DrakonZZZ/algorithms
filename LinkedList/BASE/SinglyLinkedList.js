@@ -1,3 +1,5 @@
+// time complexity O(n) traverse, O(1) append and prepend
+
 class Node {
   constructor(data) {
     this.data = data
@@ -38,7 +40,7 @@ class LinkedList {
     let current = this.head
     let count = 0
 
-    while (current && count !== index) {
+    while (current && count !== idx) {
       current = current.next
       count++
     }
@@ -115,4 +117,3 @@ myList.list()
 myList.insert(2, 2.5)
 console.log('List after insert:')
 myList.list()
-
