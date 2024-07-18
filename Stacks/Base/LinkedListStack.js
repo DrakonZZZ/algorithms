@@ -11,6 +11,7 @@ class Stack {
     this.size = 0
   }
 
+  // O(1) operation
   push(value) {
     const newNode = new Node(value)
     newNode.next = this.top
@@ -18,6 +19,7 @@ class Stack {
     this.size++
   }
 
+  // O(1) operation
   pop() {
     if (!this.isEmpty()) {
       return 'underflow'
