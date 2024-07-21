@@ -27,7 +27,13 @@ This repository is a comprehensive collection of algorithms implemented in JavaS
 - Singly Linked List
 - Doubly Linked List
 - Circular Linked List
+-  Skip list
 - Improvements and optimizations
+
+### Stacks And Queues
+- Singly linkedList & Doubly LinkedList Stack
+- Singly linkedList & Doubly LinkedList Queue
+- Ring Buffer
 
 ### Sorting Algorithms
 
