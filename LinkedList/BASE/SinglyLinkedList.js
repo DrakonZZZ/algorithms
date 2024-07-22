@@ -1,4 +1,4 @@
-// time complexity O(n) traverse, O(1) append and prepend
+// time complexity O(n) traverse, O(1) append and prepend and adding to anywhere inbetween is O(n)
 
 class Node {
   constructor(data) {
