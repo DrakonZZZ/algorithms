@@ -1,3 +1,4 @@
+// creating two array stacks to keep track of which process to run
 class BlockQueue {
   constructor(maxSize = 10) {
     this.queue = []
