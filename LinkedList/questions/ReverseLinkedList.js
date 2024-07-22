@@ -25,10 +25,11 @@ class LinkedList {
     current.next = newNode
   }
 
+  //  Reverse function 
   reverse() {
     let current = this.head
-    let prev = null
-    let next = null
+    let prev = null // first pointer 
+    let next = null // second pointer (second pointer isn't required for doubly linked list)
 
     while (current) {
       next = current.next
