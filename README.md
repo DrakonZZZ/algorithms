@@ -53,15 +53,20 @@ This repository is a comprehensive collection of algorithms implemented in JavaS
 - Exponential Search
 - Interpolation Search
 
-  Tree Search Algorithms
+### Tree Search Algorithms
+<details>
+  <summary>Tree Structure </summary>
+  
+  - Depth-First Search (DFS)
+  - Breadth-First Search (BFS) 
+  - Self-Balancing Concepts: AVL Tree, Red-Black Tree
+  - Multi-Way Trees: 2-3 Tree, 2-3-4 Tree (wip)
+  - Advanced Self-Balancing: Splay Tree, Treap(wip)
+  - Disk-Based and Range Queries: B-Tree, B+ Tree(wip)
+  - Advanced and Specialized: Tango Tree(wip)
+    
+</details>
 
-- Depth-First Search (DFS)
-- Breadth-First Search (BFS) 
-- Self-Balancing Concepts: AVL Tree, Red-Black Tree
-- Multi-Way Trees: 2-3 Tree, 2-3-4 Tree (wip)
-- Advanced Self-Balancing: Splay Tree, Treap(wip)
-- Disk-Based and Range Queries: B-Tree, B+ Tree(wip)
-- Advanced and Specialized: Tango Tree(wip)
 
 ### Graph Algorithms
 
@@ -70,6 +75,8 @@ This repository is a comprehensive collection of algorithms implemented in JavaS
 - Floyd-Warshall Algorithm
 - Prim's and Kruskal's Algorithms
 - Enhancements and optimizations
+
+
 
 ### Dynamic Programming
 
