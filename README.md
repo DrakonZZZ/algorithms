@@ -8,11 +8,13 @@ This repository contains a collection of algorithms that I have explored, implem
 - [Algorithms](#algorithms)
   - [Linked List](#linked-list)
   - [Sorting Algorithms](#sorting-algorithms)
+  - [Stacks and Queues](#stacks-and-queues)
+  - [Tree Search Algorithms](#tree-algorithms)
   - [Search Algorithms](#search-algorithms)
   - [Graph Algorithms](#graph-algorithms)
   - [Dynamic Programming](#dynamic-programming)
   - [Huffman Algorithm](#huffman-algorithm)
-- [Usage](#usage)
+    
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -31,6 +33,7 @@ This repository is a comprehensive collection of algorithms implemented in JavaS
 - Improvements and optimizations
 
 ### Stacks And Queues
+
 - Singly linkedList & Doubly LinkedList Stack
 - Singly linkedList & Doubly LinkedList Queue
 - Ring Buffer
@@ -53,7 +56,7 @@ This repository is a comprehensive collection of algorithms implemented in JavaS
 - Exponential Search
 - Interpolation Search
 
-### Tree Search Algorithms
+### Tree Algorithms
 <details>
   <summary>Tree Structure </summary>
   
