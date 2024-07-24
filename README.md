@@ -56,7 +56,12 @@ This repository is a comprehensive collection of algorithms implemented in JavaS
   Tree Search Algorithms
 
 - Depth-First Search (DFS)
-- Breadth-First Search (BFS)
+- Breadth-First Search (BFS) 
+- Self-Balancing Concepts: AVL Tree, Red-Black Tree
+- Multi-Way Trees: 2-3 Tree, 2-3-4 Tree (wip)
+- Advanced Self-Balancing: Splay Tree, Treap(wip)
+- Disk-Based and Range Queries: B-Tree, B+ Tree(wip)
+- Advanced and Specialized: Tango Tree(wip)
 
 ### Graph Algorithms
 
