@@ -1,3 +1,5 @@
+// Block queue used for keeping process order in queue
+
 class BlockQueue {
   constructor(maxSize = 10) {
     this.queue = []

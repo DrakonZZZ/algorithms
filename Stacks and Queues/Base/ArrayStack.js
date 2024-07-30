@@ -5,10 +5,12 @@ class Stack {
     this.items = []
   }
 
+  // adds to the top
   push(ele) {
     this.items.push(ele)
   }
 
+  // removes from the top
   pop() {
     if (this.isEmpty()) {
       return 'underflow'
