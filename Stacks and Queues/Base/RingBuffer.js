@@ -2,7 +2,7 @@ class RingBuffer {
   constructor(size) {
     this.buffer = new Array(size)
     this.head = 0
-    this.tail = 0
+    this.tail = 0 // links tail to head
     this.size = size
     this.ringSize = 0
   }

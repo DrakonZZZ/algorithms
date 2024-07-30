@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 // Block queue used for keeping process order in queue
 
+=======
+// creating two array stacks to keep track of which process to run
+>>>>>>> 10f5386a990bb1e6b2fc99787b7416d525e7add9
 class BlockQueue {
   constructor(maxSize = 10) {
     this.queue = []

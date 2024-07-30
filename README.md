@@ -8,11 +8,13 @@ This repository contains a collection of algorithms that I have explored, implem
 - [Algorithms](#algorithms)
   - [Linked List](#linked-list)
   - [Sorting Algorithms](#sorting-algorithms)
+  - [Stacks and Queues](#stacks-and-queues)
+  - [Tree Search Algorithms](#tree-algorithms)
   - [Search Algorithms](#search-algorithms)
   - [Graph Algorithms](#graph-algorithms)
   - [Dynamic Programming](#dynamic-programming)
   - [Huffman Algorithm](#huffman-algorithm)
-- [Usage](#usage)
+    
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -27,7 +29,14 @@ This repository is a comprehensive collection of algorithms implemented in JavaS
 - Singly Linked List
 - Doubly Linked List
 - Circular Linked List
+-  Skip list
 - Improvements and optimizations
+
+### Stacks And Queues
+
+- Singly linkedList & Doubly LinkedList Stack
+- Singly linkedList & Doubly LinkedList Queue
+- Ring Buffer
 
 ### Sorting Algorithms
 
@@ -47,10 +56,20 @@ This repository is a comprehensive collection of algorithms implemented in JavaS
 - Exponential Search
 - Interpolation Search
 
-  Tree Search Algorithms
+### Tree Algorithms
+<details>
+  <summary>Tree Structure </summary>
+  
+  - Depth-First Search (DFS)
+  - Breadth-First Search (BFS) 
+  - Self-Balancing Concepts: AVL Tree, Red-Black Tree
+  - Multi-Way Trees: 2-3 Tree, 2-3-4 Tree (wip)
+  - Advanced Self-Balancing: Splay Tree, Treap(wip)
+  - Disk-Based and Range Queries: B-Tree, B+ Tree(wip)
+  - Advanced and Specialized: Tango Tree(wip)
+    
+</details>
 
-- Depth-First Search (DFS)
-- Breadth-First Search (BFS)
 
 ### Graph Algorithms
 
@@ -59,6 +78,8 @@ This repository is a comprehensive collection of algorithms implemented in JavaS
 - Floyd-Warshall Algorithm
 - Prim's and Kruskal's Algorithms
 - Enhancements and optimizations
+
+
 
 ### Dynamic Programming
 
