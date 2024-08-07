@@ -1,3 +1,5 @@
+// trie is storing a predictive text or autocomplete dictionary
+
 class TrieNode {
   constructor() {
     this.children = {} // Map of characters to child nodes
