@@ -12,11 +12,12 @@ class BST {
     this.root = null
   }
 
-  //Time complexity O(log N) avg and O(n) Worst case
+  // Time complexity O(log N) avg and O(n) Worst case
   insert(value) {
     const newNode = new Node(value)
     if (!this.root) {
       this.root = newNode
+      return this
     } else {
       let temp = this.root
       while (true) {
@@ -24,13 +25,13 @@ class BST {
         if (value < temp.value) {
           if (!temp.left) {
             temp.left = newNode
-            return
+            return this
           }
           temp = temp.left
         } else {
           if (!temp.right) {
             temp.right = newNode
-            return
+            return this
           }
           temp = temp.right
         }
@@ -38,7 +39,7 @@ class BST {
     }
   }
 
-  //Time complexity O(log N) avg and O(n) Worst case
+  // Time complexity O(log N) avg and O(n) Worst case
   find(value) {
     if (!this.root) return null
     let temp = this.root
@@ -52,7 +53,8 @@ class BST {
     }
     return false
   }
-  //Time complexity O(log N) avg and O(n) Worst case
+
+  // Time complexity O(log N) avg and O(n) Worst case
   findMin() {
     if (!this.root) return undefined
     let temp = this.root
@@ -61,7 +63,8 @@ class BST {
     }
     return temp.value
   }
-  //Time complexity O(log N) avg and O(n) Worst case
+
+  // Time complexity O(log N) avg and O(n) Worst case
   findMax() {
     if (!this.root) return undefined
     let temp = this.root
@@ -71,13 +74,11 @@ class BST {
     return temp.value
   }
 
-  //Time complexity O(log N) avg and O(n) Worst case
+  // Time complexity O(log N) avg and O(n) Worst case
   delete(value) {
-    // replaces the root node with modified node
     this.root = this._deleteRec(this.root, value)
   }
 
-  //recursive delete
   _deleteRec(root, value) {
     if (!root) return root
 
@@ -102,8 +103,54 @@ class BST {
     }
     return temp.value
   }
+
+  // Breadth-First Search
+  breadthFirstSearch() {
+    let temp = this.root,
+      queue = [],
+      result = []
+    queue.push(temp)
+    while (queue.length) {
+      temp = queue.shift()
+      result.push(temp.value)
+      if (temp.left) queue.push(temp.left)
+      if (temp.right) queue.push(temp.right)
+    }
+    return result
+  }
+
+  // Depth-First Search - PreOrder
+  dfsPre(node = this.root, result = []) {
+    if (node) {
+      result.push(node.value)
+      if (node.left) this.dfsPre(node.left, result)
+      if (node.right) this.dfsPre(node.right, result)
+    }
+    return result
+  }
+
+  // Depth-First Search - PostOrder
+  dfsPost(node = this.root, result = []) {
+    if (node) {
+      if (node.left) this.dfsPost(node.left, result)
+      if (node.right) this.dfsPost(node.right, result)
+      result.push(node.value)
+    }
+    return result
+  }
+
+  // Depth-First Search - InOrder
+  dfsIn(node = this.root, result = []) {
+    if (node) {
+      if (node.left) this.dfsIn(node.left, result)
+      result.push(node.value)
+      if (node.right) this.dfsIn(node.right, result)
+    }
+    return result
+  }
 }
 
+// Example Usage
 const bst = new BST()
 bst.insert(10)
 bst.insert(5)
@@ -119,3 +166,8 @@ console.log('Find Max:', bst.findMax())
 
 bst.delete(10)
 console.log('After deleting 10, Find Min:', bst.findMin())
+
+console.log('BFS:', bst.breadthFirstSearch())
+console.log('DFS PreOrder:', bst.dfsPre())
+console.log('DFS PostOrder:', bst.dfsPost())
+console.log('DFS InOrder:', bst.dfsIn())
