@@ -1,4 +1,3 @@
-// Time Complexity O(log N);
 class Node {
   constructor(value) {
     this.value = value
@@ -6,13 +5,11 @@ class Node {
     this.right = null
   }
 }
-
 class BST {
   constructor() {
     this.root = null
   }
 
-  //Time complexity O(log N) avg and O(n) Worst case
   insert(value) {
     const newNode = new Node(value)
     if (!this.root) {
@@ -38,7 +35,6 @@ class BST {
     }
   }
 
-  //Time complexity O(log N) avg and O(n) Worst case
   find(value) {
     if (!this.root) return null
     let temp = this.root
@@ -52,7 +48,7 @@ class BST {
     }
     return false
   }
-  //Time complexity O(log N) avg and O(n) Worst case
+
   findMin() {
     if (!this.root) return undefined
     let temp = this.root
@@ -61,7 +57,7 @@ class BST {
     }
     return temp.value
   }
-  //Time complexity O(log N) avg and O(n) Worst case
+
   findMax() {
     if (!this.root) return undefined
     let temp = this.root
@@ -71,13 +67,10 @@ class BST {
     return temp.value
   }
 
-  //Time complexity O(log N) avg and O(n) Worst case
   delete(value) {
-    // replaces the root node with modified node
     this.root = this._deleteRec(this.root, value)
   }
 
-  //recursive delete
   _deleteRec(root, value) {
     if (!root) return root
 
@@ -103,19 +96,3 @@ class BST {
     return temp.value
   }
 }
-
-const bst = new BST()
-bst.insert(10)
-bst.insert(5)
-bst.insert(15)
-bst.insert(3)
-bst.insert(7)
-bst.insert(13)
-bst.insert(17)
-
-console.log('Find 7:', bst.find(7))
-console.log('Find Min:', bst.findMin())
-console.log('Find Max:', bst.findMax())
-
-bst.delete(10)
-console.log('After deleting 10, Find Min:', bst.findMin())
