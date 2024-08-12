@@ -73,6 +73,11 @@ This repository is a comprehensive collection of algorithms implemented in JavaS
 
 </details>
 
+### Hash Table
+
+- Seperate Chaining
+- Open Addressing
+
 ### Graph Algorithms
 
 - Dijkstra's Algorithm
