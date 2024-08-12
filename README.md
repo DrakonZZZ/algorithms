@@ -6,6 +6,7 @@ This repository contains a collection of algorithms that I have explored, implem
 
 - [Introduction](#introduction)
 - [Algorithms](#algorithms)
+
   - [Linked List](#linked-list)
   - [Sorting Algorithms](#sorting-algorithms)
   - [Stacks and Queues](#stacks-and-queues)
@@ -14,7 +15,7 @@ This repository contains a collection of algorithms that I have explored, implem
   - [Graph Algorithms](#graph-algorithms)
   - [Dynamic Programming](#dynamic-programming)
   - [Huffman Algorithm](#huffman-algorithm)
-    
+
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -29,7 +30,7 @@ This repository is a comprehensive collection of algorithms implemented in JavaS
 - Singly Linked List
 - Doubly Linked List
 - Circular Linked List
--  Skip list
+- Skip list
 - Improvements and optimizations
 
 ### Stacks And Queues
@@ -57,19 +58,20 @@ This repository is a comprehensive collection of algorithms implemented in JavaS
 - Interpolation Search
 
 ### Tree Algorithms
+
 <details>
   <summary>Tree Structure </summary>
-  
-  - Depth-First Search (DFS)
-  - Breadth-First Search (BFS) 
-  - Self-Balancing Concepts: AVL Tree, Red-Black Tree
-  - Multi-Way Trees: 2-3 Tree, 2-3-4 Tree (wip)
-  - Advanced Self-Balancing: Splay Tree, Treap(wip)
-  - Disk-Based and Range Queries: B-Tree, B+ Tree(wip)
-  - Advanced and Specialized: Tango Tree(wip)
-    
-</details>
 
+- Depth-First Search (DFS)
+- Breadth-First Search (BFS)
+- Self-Balancing Concepts: AVL Tree, Red-Black Tree
+- Multi-Way Trees: 2-3 Tree, 2-3-4 Tree (wip)
+- Advanced Self-Balancing: Splay Tree, Treap(wip)
+- Disk-Based and Range Queries: B-Tree, B+ Tree(wip)
+- Advanced and Specialized: Tango Tree(wip)
+- Trie Tree
+
+</details>
 
 ### Graph Algorithms
 
@@ -78,8 +80,6 @@ This repository is a comprehensive collection of algorithms implemented in JavaS
 - Floyd-Warshall Algorithm
 - Prim's and Kruskal's Algorithms
 - Enhancements and optimizations
-
-
 
 ### Dynamic Programming
 
@@ -94,6 +94,11 @@ This repository is a comprehensive collection of algorithms implemented in JavaS
 - Compression and decompression methods
 
 and much more
+
+### Misc.
+
+- Implementation of word suggestion using Trie
+- javascript custom method implementation
 
 ### Contributing
 
