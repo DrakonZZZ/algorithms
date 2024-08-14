@@ -77,6 +77,7 @@ This repository is a comprehensive collection of algorithms implemented in JavaS
 
 - Seperate Chaining
 - Open Addressing
+- Perfect Hashing (Not used that much)
 
 ### Graph Algorithms
 

@@ -44,3 +44,5 @@ linearHT.insert(11, 'value2') // Collides with key 1
 console.log(linearHT.search(11)) // value2
 linearHT.delete(11)
 console.log(linearHT.search(11)) // undefined
+
+// More cache-friendly as data is stored in a contiguous block of memory
