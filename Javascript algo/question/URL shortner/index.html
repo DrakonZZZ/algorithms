@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+
+
+        #input-container {
+            display: flex;
+            gap: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>URL Shortener</h1>
+        <div id="input-container">
+            <div>
+                <input type="text" id="long-url" placeholder="Enter long URL">
+                <button id="shorten-btn">Shorten URL</button>
+            </div>
+            <div>
+                <input type="text" id="short-url" placeholder="Enter short URL">
+                <button id="retrieve-btn">Retrieve Origial URL</button>
+            </div>
+
+            <div id="result"></div>
+        </div>
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>

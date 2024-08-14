@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Password Management System</h1>
+
+        <div class="form-group">
+            <input type="text" id="username" placeholder="username">
+        </div>
+        <div class="form-group">
+            <input type="password" id="password" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <select id="hash-method">
+                <option value="cuckoo">Cuckoo Hashing</option>
+                <option value="robinhood">Robin Hood Hashing</option>
+            </select>
+        </div>
+        <button id="add-password">Password</button>
+        <button id="search-password">Search Password</button>
+        <button id="delete-password">Delete Password</button>
+
+        <div id="result"></div>
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>
