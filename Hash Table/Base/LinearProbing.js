@@ -9,7 +9,7 @@ class LinearProbingHashTable {
   }
 
   insert(key, value) {
-    const idx = this._hash(key)
+    let idx = this._hash(key)
     while (this.table[idx] !== undefined) {
       // look for next space
       idx = (idx + 1) % this.table.length
@@ -18,7 +18,7 @@ class LinearProbingHashTable {
   }
 
   search(key) {
-    const idx = this._hash(key)
+    let idx = this._hash(key)
     while (this.table[idx] !== undefined) {
       if (this.table[idx][0] === key) return this.table[idx][1]
       idx = (idx + 1) % this.table.length
