@@ -75,9 +75,16 @@ This repository is a comprehensive collection of algorithms implemented in JavaS
 
 ### Hash Table
 
+<details>
+  <summary>Hash Table </summary>
+
 - Seperate Chaining
 - Open Addressing
 - Perfect Hashing (Not used that much)
+- Double Hashing, Quadradic Hashing
+- Cuckoo and Robin Hood Hashing
+
+</details>
 
 ### Graph Algorithms
 
