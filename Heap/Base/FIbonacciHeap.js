@@ -209,3 +209,6 @@ console.log(heap.extractMin()) // Output: 2
 console.log(heap.extractMin()) // Output: 3
 heap.decreaseKey(heap.insert(7), 1)
 console.log(heap.extractMin()) // Output: 1
+
+
+//  Best for algorithms that require frequent decrease-key operations, like Dijkstra’s or Prim’s algorithms
