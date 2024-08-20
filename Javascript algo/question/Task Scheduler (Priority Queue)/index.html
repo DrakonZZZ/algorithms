@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Scheduler</title>
+    <link rel="stylesheet" href="style.css" </head>
+
+<body>
+    <div class="container">
+        <h1>Task Scheduler</h1>
+        <div class="task-container">
+            <div class="task-form">
+                <input type="text" id="task-name" placeholder="Task Name" required>
+                <input type="number" id="task-priority" placeholder="Priority (1 is higest)" required>
+            </div>
+
+            <button id="add-task">Add Task</button>
+        </div>
+        <h2>Task Queue</h2>
+        <ul id="task-list"></ul>
+        <button id="execute-task">Execute Task</button>
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>
