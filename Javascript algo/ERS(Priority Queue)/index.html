@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Response System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Emergency Response System</h1>
+        <div class="incident-form">
+            <input type="text" id="incident-name" placeholder="Incident Name" required>
+            <input type="number" id="incident-priority" placeholder="Priority (1 is highest)" required>
+            <textarea id="incident-description" placeholder="Incident Description"></textarea>
+            <button id="add-incident">Add Incident</button>
+        </div>
+
+        <h2>Incident List</h2>
+        <ul id="incident-list"></ul>
+
+        <h2>Notification</h2>
+        <ul id="notification-list"></ul>
+        <button id="send-notification">Send Notification</button>
+    </div>
+
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>
