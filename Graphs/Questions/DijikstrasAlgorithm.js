@@ -1,6 +1,5 @@
 // Time Complexity: 𝑂((𝐸+𝑉)⋅log𝑉)O((E+V)⋅logV)
-//Space Complexity: 𝑂(𝑉+𝐸)O(V+E)
-
+// Space Complexity: 𝑂(𝑉+𝐸)O(V+E)
 
 class MinHeap {
   constructor() {

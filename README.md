@@ -88,6 +88,8 @@ This repository is a comprehensive collection of algorithms implemented in JavaS
 
 ### Graph Algorithms
 
+- Adjacency List and Matrix Graph
+- Topological Sort
 - Dijkstra's Algorithm
 - Bellman-Ford Algorithm
 - Floyd-Warshall Algorithm

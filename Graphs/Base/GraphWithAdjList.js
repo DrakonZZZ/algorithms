@@ -33,7 +33,7 @@ class Graph {
       const queue = this.#adjacenylist[v]
       while (queue.length) {
         let current = queue.pop()
-        this.removeEdges(current, v)
+        this.removeEdge(current, v)
       }
       delete this.#adjacenylist[v]
       return this
