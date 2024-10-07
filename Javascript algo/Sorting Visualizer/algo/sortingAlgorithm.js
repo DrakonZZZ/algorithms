@@ -25,17 +25,18 @@ export const bubbleSort = async () => {
         bars[j + 1].innerText = arr[j + 1]
       }
 
-      bars[j].style.background = '#912d8a'
-      bars[j + 1].style.background = '#912d8a'
+      bars[j].style.background = '#de65d1'
+      bars[j + 1].style.background = '#de65d1'
     }
 
     // mark the last sorted element in the current pass as sorted (green)
-    bars[arr.length - i - 1].style.background = 'green'
+    bars[arr.length - i - 1].style.background = '#591d53'
+    bars[arr.length - i - 1].style.color = 'yellow'
   }
   const endTime = performance.now()
   timeDisplay.innerText = `sorting duration: ${(endTime - startTime).toFixed(
     2
-  )}`
+  )} ms`
 }
 
 // helper function to swap elements in the array

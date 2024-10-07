@@ -32,10 +32,12 @@ button:hover {
   padding: 1rem;
   color: white;
   text-align: center;
+  font-weight: 600;
 }
 
 .array-bar {
   padding: 1rem;
   margin: 0 2px;
-  background-color: rgb(120, 34, 114);
+  border-radius: 10px 10px 0 0;
+  background-color: #de65d1;
 }
