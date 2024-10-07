@@ -1,4 +1,6 @@
-let arr = []
+import { bubbleSort } from './algo/sortingAlgorithm.js'
+
+export let arr = []
 
 // Function to generate a random array
 const generateArray = (size = 20) => {
@@ -29,6 +31,9 @@ const displayArray = () => {
 const arrayContainer = document.getElementById('array')
 document.getElementById('generateArray').addEventListener('click', function () {
   generateArray()
+})
+document.getElementById('bubbleSort').addEventListener('click', function () {
+  bubbleSort()
 })
 
 // Initially generating an array at startup
