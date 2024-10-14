@@ -1,5 +1,6 @@
 import { selectionSort } from './algo/selectionSort.js'
 import { bubbleSort } from './algo/sortingAlgorithm.js'
+import { insertionSort } from './algo/insertionSort.js'
 
 export let arr1 = [],
   arr2 = [],
@@ -37,7 +38,7 @@ const displayArray = () => {
   for (let i = 0; i < arr1.length; i++) {
     const bar1 = createBar(arr1[i], arr1.length)
     const bar2 = createBar(arr2[i], arr2.length)
-    const bar3 = createBar(arr1[i], arr3.length)
+    const bar3 = createBar(arr3[i], arr3.length)
     arrayContainer1.appendChild(bar1)
     arrayContainer2.appendChild(bar2)
     arrayContainer3.appendChild(bar3)
@@ -57,6 +58,9 @@ document.getElementById('bubbleSort').addEventListener('click', function () {
 })
 document.getElementById('selectionSort').addEventListener('click', function () {
   selectionSort()
+})
+document.getElementById('insertionSort').addEventListener('click', function () {
+  insertionSort()
 })
 
 // Initially generating an array at startup

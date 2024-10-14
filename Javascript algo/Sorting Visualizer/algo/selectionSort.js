@@ -30,7 +30,7 @@ export const selectionSort = async () => {
     }
 
     // Swap the found minimum element with the first element of the unsorted array
-    swap(i, minIndex)
+    swap(i, minIndex, arr2)
 
     // Update the height and text of the bars
     bars[i].style.height = `${arr2[i] * 3}px`
@@ -50,6 +50,6 @@ export const selectionSort = async () => {
 }
 
 // Helper function to swap elements in the array
-const swap = (idx1, idx2) => {
-  ;[arr2[idx1], arr2[idx2]] = [arr2[idx2], arr2[idx1]]
+export const swap = (idx1, idx2, arrName) => {
+  ;[arrName[idx1], arrName[idx2]] = [arrName[idx2], arrName[idx1]]
 }
