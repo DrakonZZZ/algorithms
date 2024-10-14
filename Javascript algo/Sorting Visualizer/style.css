@@ -23,7 +23,8 @@ button:hover {
 }
 
 .array-container-1,
-.array-container-2 {
+.array-container-2,
+.array-container-3 {
   display: flex;
   align-items: flex-end;
   justify-content: center;
