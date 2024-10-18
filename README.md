@@ -48,6 +48,7 @@ This repository is a comprehensive collection of algorithms implemented in JavaS
 - Quick Sort
 - Heap Sort
 - Optimizations and enhancements
+- Pratical usage in real world
 
 ### Search Algorithms
 
@@ -115,6 +116,7 @@ and much more
 - Implementation of word suggestion using Trie
 - javascript custom method implementation
 - pratical use of algorithms
+
 ### Contributing
 
 Contributions are welcome! If you have an algorithm you'd like to add or an improvement to an existing one, feel free to open a pull request. Please ensure your code follows the style and guidelines of this repository.
