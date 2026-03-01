@@ -1,6 +1,6 @@
 # Algorithm Collection
 
-This repository contains a collection of algorithms that I have explored, implemented, and improved. The algorithms range from simple data structures like linked lists to more complex ones like the Huffman algorithm. Each algorithm comes with an implementation in JavaScript and includes comments and explanations to help understand the logic and improvements made.
+This repository contains a collection of algorithms that I have explored, implemented, and improved. The algorithms range from simple data structures like linked lists to more complex ones like the Huffman algorithm. Each algorithm comes with an implementation in JavaScript and Python (soon...) includes comments and explanations to help understand the logic and improvements made.
 
 ## Table of Contents
 
@@ -21,7 +21,7 @@ This repository contains a collection of algorithms that I have explored, implem
 
 ## Introduction
 
-This repository is a comprehensive collection of algorithms implemented in JavaScript. The aim is to provide clear and efficient implementations of various algorithms, along with improvements and optimizations where applicable. The algorithms are categorized for ease of navigation and understanding.
+This repository is a comprehensive collection of algorithms implemented in JavaScript. The aim is to provide clear and efficient implementations of various algorithms, along with improvements and optimizations where applicable. The algorithms are categorized for ease of navigation and understanding more will be added.
 
 ## Algorithms
 
